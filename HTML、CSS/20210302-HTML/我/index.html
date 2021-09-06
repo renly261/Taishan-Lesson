@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 標題 ------------------------------------------------------------------------------------ -->
+  <!-- 標籤 : 標記內容，產生語意結構，標籤內有屬性，可以設定屬性和值，例如 <input type="text">內容</input> input 是標籤 type 是標籤內的屬性 text 是標籤內屬性的值 -->
+  <h1>Hello World!</h1>
+  <h2>Hello World!</h2>
+  <h3>Hello World!</h3>
+  <h4>Hello World!</h4>
+  <h5>Hello World!</h5>
+  <h6>Hello World!</h6>
+  <h1>JOJO冒險野狼</h1>
+
+  <!-- 段落 ------------------------------------------------------------------------------------ -->
+  <p>段落文章</p>
+
+  <!-- 水平線 ------------------------------------------------------------------------------------ -->
+  <hr>
+
+  <!-- 連結 ------------------------------------------------------------------------------------ -->
+  <!-- Hypertext Reference href-->
+  <!-- target= "_blank" 開啟新視窗 -->
+  <!-- a href="#myform"跳到<form id="myform" -->
+  <a href="https://www.google.com" target="_blank">Google</a>
+  <!-- 換行 ------------------------------------------------------------------------------------ -->
+  <br>
+  <a href="#myform">跳到myform</a>
+  <br>
+  <a href="#list">跳到list</a>
+  <br>
+  <a href="http://yahoo.com">Yahoo</a>
+
+  <!-- ul 無序號清單 ------------------------------------------------------------------------------------ -->
+  <ul>
+    <!-- li 清單項目 ------------------------------------------------------------------------------------ -->
+    <li>上網</li>
+    <li>看電影</li>
+    <li>唱歌</li>
+    <li>逛街</li>
+  </ul>
+
+  <!-- ol 有序號清單 ------------------------------------------------------------------------------------ -->
+  <ol>
+    <!-- li 清單項目 -->
+    <li>上網</li>
+    <li>看電影</li>
+    <li>唱歌</li>
+    <li>逛街</li>
+  </ol>
+
+  <!-- 巢狀結構 -->
+  <ul>
+    <li>
+      <h3>前端技能</h3>
+      <ol>
+        <li>HTML</li>
+        <li>CSS
+        <li>JavaScript</li>
+        <li>jQuery</li>
+      </ol>
+    </li>
+
+    <li>
+      <h3>後端技能</h3>
+      <ol>
+        <li>PHP
+        <li>Mysql</li>
+      </ol>
+    <li>
+      <ul>
+
+        <!-- 圖片 ------------------------------------------------------------------------------------ -->
+        <!-- alt 替代文字，圖片連結失效出現的文字 -->
+        <!-- title 滑鼠移上圖片的標題文字 -->
+        <!-- 相對路徑 設計網站請用這個 -->
+        <!--
+          ./other.jpg 從目前文件位置去找資源 
+          ../other/hell.jpg 回上一層的目錄找尋資源
+        -->
+        <img src="./images/otter.jpg" width="300" alt="水獺" title="哈囉">
+
+        <!-- 絕對路徑 連結到外部資源 -->
+        <img src="data:image/jpeg;base64,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" alt="">
+
+        <!-- 跑馬燈 -->
+        <marquee>今天是第一天 html 課程</marquee>
+
+        <!-- 粗體 -->
+        <b>我是粗體</b>
+        <strong>粗體，強調是粗體</strong>
+        <hr>
+
+        <!-- 斜體 -->
+        <i>我是斜體</i>
+        <em>我是斜體</em>
+        <hr>
+
+        <!-- 刪除線 -->
+        <s>我是刪除線</s>
+        <del>我是刪除線</del>
+        <hr>
+
+        <!-- 底線 -->
+        <u>我是底線</u>
+        <ins>我是底線</ins>
+        <hr>
+
+        <!-- 上標 -->
+        X<sup>2</sup>
+        <hr>
+
+        <!-- 下標 -->
+        CO<sub>2</sub>
+
+        <!-- pre 可以把空格顯現 -->
+        <pre>
+          <code>
+            1234   12313    548646
+          </code>
+        </pre>
+
+        <!-- 頁框, 可以在這個頁面的特定範圍載入指定網頁 -->
+        <!-- 將 a 連結的內容顯示在 iframe 裡面，a 連結的 target 要和 iframe 的 name 相同 -->
+        <a href="./hello.html" target="showFrame">hello.html</a>
+        <iframe name="showFrame" src="./03.HTML_structure.html" frameborder="1" width="500" height="300" frameborder="1"></iframe>
+        <hr>
+
+        <!-- 表格 ------------------------------------------------------------------------------------ -->
+        <!-- tr 列 td 欄 -->
+        <!-- cellspacing 欄位與欄位之間的距離 -->
+        <!-- cellpadding 欄位的內距 -->
+        <!-- align 置中 -->
+        <table id="list" border="1" align="center" width="600" cellspacing="10" cellpadding="10">
+          <tr align="center">
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+          </tr>
+          <tr align="center">
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+          </tr>
+          <tr align="center">
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+          </tr>
+        </table>
+
+        <!-- table 完整 -->
+        <!-- thead、tbody、tfoot 不影響畫面，多標一層表示結構的分類 -->
+        <table border="1" align="center" width="600">
+          <!-- 標題 -->
+          <caption>射雕三部曲</caption>
+          <thead>
+            <tr>
+              <!-- th 粗體 置中 -->
+              <th>名字</th>
+              <th>內功</th>
+              <th>絕技</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>郭靖</td>
+              <td>九陰真經</td>
+              <td>翔龍十八掌</td>
+            </tr>
+            <tr>
+              <td>楊過</td>
+              <td>九陰真經</td>
+              <td>黯然消魂掌</td>
+            </tr>
+            <tr>
+              <td>張無忌</td>
+              <td>九陰真經</td>
+              <td>乾坤大挪移</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>表格註腳</td>
+              <td>表格註腳</td>
+              <td>表格註腳</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <br>
+
+        <!-- 表格合併 -->
+        <!-- colspan (欄合併) (左右欄的合併), 左吃右，右消失，colspan="吃幾個+自己" -->
+        <!-- rowspan (列合併) (上下列的合併), 上吃下，下消失，rowspan="吃幾個+自己" -->
+        <table border="1" width="600" align="center">
+          <tr align="center">
+            <td colspan="3">1</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+          <tr align="center">
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+            <td colspan="2">5</td>
+          </tr>
+          <tr align="center">
+            <td>1</td>
+            <td>2</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+          <tr align="center">
+            <td rowspan="3">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+          <tr align="center">
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+          <tr align="center">
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+        </table>
+        <br>
+
+        <!-- 表單 ------------------------------------------------------------------------------------ -->
+        <!--
+            enctype="multipart/form-data" 上傳檔案必須的屬性值
+            action="a.html" 按送出導向到 a.html 
+            method="post" 傳送資料較為安全，帳密使用這個 
+            method="get" 傳送資料會顯示在網址列，帳密不能使用get 
+        -->
+        <form id="myform" action="a.html" method="post" enctype="multipart/form-data">
+          <table width="600" border="1" cellspadding="5" cellspacing="5" align="center">
+            <tr>
+              <td width="100">帳號:</td>
+              <!-- size 欄位寬度 -->
+              <!-- maxlength 最大字元數 -->
+              <td><input name="account" type="text" size="30" maxlength="10" placeholder="請輸入帳號"></td>
+            </tr>
+            <tr>
+              <td>密碼:</td>
+              <td><input type="password" name="pw" placeholder="請輸入密碼"></td>
+            </tr>
+
+            <tr>
+              <td>性別:</td>
+              <td>
+                <!-- radio 為單選，name需相同表示同一組單選，checked 為預設勾取選項 -->
+                <input type="radio" name="gender" value="男">男
+                <input type="radio" name="gender" value="女" checked>女
+              </td>
+            </tr>
+
+            <tr>
+              <td>興趣:</td>
+              <td>
+                <!-- checkbox 為多選，name需相同表示同一組多選 -->
+                <input type="checkbox" name="like" value="拍照">拍照
+                <input type="checkbox" name="like" value="看書">看書
+                <input type="checkbox" name="like" value="唱歌">唱歌
+                <input type="checkbox" name="like" value="寫網頁">寫網頁
+              </td>
+            </tr>
+            <tr>
+              <td>出生年份:</td>
+              <td>
+                <!-- select 下拉選單 -->
+                <select name="my_selec">
+                  <!-- option 下拉選單的內容 -->
+                  <!-- selected 預設選項 -->
+                  <option value="1980">1980</option>
+                  <option value="1990">1990</option>
+                  <option value="2000" selected>2000</option>
+                  <option value="2010">2010</option>
+                </select>
+                年
+              </td>
+            </tr>
+
+            <tr>
+              <td>上傳檔案:</td>
+              <td><input type="file" name="upload_file"></td>
+            </tr>
+
+            <tr>
+              <td>留言訊息:</td>
+              <!-- cols 一列幾個字 row 幾列 -->
+              <td><textarea name="msg" cols="30" rows="10"></textarea></td>
+            </tr>
+
+            <tr>
+              <td>操作</td>
+              <td>
+                <input type="submit" value="送出">
+                <input type="reset" value="重置">
+              </td>
+            </tr>
+          </table>
+        </form>
+
+        <!-- 區塊標籤(元素) 一人占一列空間 -->
+        <!-- div、p、ul、li -->
+        <div>div</div>
+        <p>p</p>
+        <!-- 行內標籤(元素) 乖乖排隊 -->
+        <!-- span、a、em、b、s、i -->
+        <a href="#">aaa</a>
+        <a href="#">bbb</a>
+        <span>ccc</span>
+        <span>ddd</span>
+
+        <!-- html5 新增標籤 -->
+        <!-- 語意(義)化 -->
+
+        <!-- 定義網頁首頁區域 -->
+        <header></header>
+        <!-- 定義網頁導覽區域 -->
+        <nav></nav>
+        <!-- 定義網頁頁尾區域 -->
+        <footer></footer>
+        <!-- 定義一個區域範圍 -->
+        <section></section>
+        <!-- 定義側邊區域範圍 -->
+        <aside></aside>
+        <!-- 定義文章範圍 -->
+        <article></article>
+
+        <div id="header"></div>
+        <div id="footer">footer</div>
+
+        <a href="#">回到頂端</a>
+</body>
+
+</html>
