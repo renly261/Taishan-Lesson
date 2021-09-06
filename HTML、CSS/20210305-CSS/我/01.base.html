@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS base></title>
+  <!-- 
+    第二種使用方式: link 外部樣式表，可以寫在另一個檔案
+    1.優點:可以減少 css 的原始碼，不需要在每個 HTML 檔案重複寫 css
+    2.設計專題或工作時，使用外部樣式
+  -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* 第一種使用方式: style 標籤，該文件專用的樣式 */
+    /* 
+    1.要有一個選擇器，選擇器的種類有很多種，幫助我們選擇要作用的目標。
+    2.接著會有大括號 {}
+    3.大括號裡面接著是 屬性:值; 屬性:值; 屬性:值;
+    4.樣式操作後面程式碼會蓋掉前面的設定，例如顏色
+    */
+    /* 標籤(類型)選擇器 */
+    h1 {
+      color: red;
+      background-color: yellow;
+    }
+
+    p {
+      color: blue;
+    }
+
+    /* 群組選擇器 */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 第三種方式:行內樣式，該元素專屬樣式 -->
+  <h1 style="color: brown;">然而合同，必須實施對她土地自主百度清除。</h1>
+  <p>培養語文資料報價插入，戰鬥我是魔獸，男。</p>
+
+  <h1>學術可能道路我們熟悉警告支撐，組合欄目。</h1>
+  <p>有限責任讀者教育活動都在漂亮地址整合實。</p>
+
+  <h1>理念比如訪問兩人，凱文中間滿足朋友，也。</h1>
+  <p>抓住主演隊員課程把它公開，鈴聲下載互相。</p>
+
+  <hr>
+
+  <h1>Hello World!</h1>
+  <h2>Hello World!</h2>
+  <h3>Hello World!</h3>
+  <h4>Hello World!</h4>
+  <h5>Hello World!</h5>
+  <h6>Hello World!</h6>
+
+</body>
+
+</html>

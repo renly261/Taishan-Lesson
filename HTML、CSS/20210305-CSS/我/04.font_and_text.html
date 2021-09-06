@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Stick&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    /* html預設字體大小，html = :root (偽類選擇器)，不用打看不到系統預設幫你寫好 */
+
+    /* :root {
+      font-size: 16px;
+    } */
+
+    html {
+      font-size: 16px;
+    }
+
+    .font-style {
+      /* 設定字體大小 px、em、rem */
+      font-size: 20px;
+      /* 設定斜體 */
+      font-style: italic;
+      /* 設定粗體 */
+      font-weight: bold;
+      /* 字體都變大寫，句首第一個字較大 */
+      font-variant: small-caps;
+    }
+
+    .text-style {
+      /* 對齊 left、right、center */
+      text-align: left;
+      /* underline 底線、overline 上引線、line-through 刪除線 */
+      text-decoration: underline;
+      /* 第一行縮排 */
+      text-indent: 32px;
+      /* capitalize 字首大寫、uppercase 全部大寫 、lowercase 全部小寫 */
+      text-transform: uppercase;
+      /* 水平位移量 垂直位移量 陰影模糊半徑 顏色，位移量可以有正負 */
+      text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+      /* 英文字母或中文字的間隔 */
+      letter-spacing: 2px;
+      /* 單字間隔，字與字之間要有空格才有效果，較適合英文 */
+      word-spacing: 16px;
+      /* 行高 px、rem、em 或是倍數 */
+      line-height: 2;
+    }
+
+    .multi-text-shadow {
+      font-size: 8rem;
+      text-shadow:
+        1px 1px 1px rgba(255, 255, 255, 1),
+        2px 2px 1px rgba(255, 255, 0, 1),
+        3px 3px 1px rgba(255, 150, 0, 1),
+        4px 4px 1px rgba(255, 0, 0, 1)
+    }
+
+    .word-wrap {
+      width: 400px;
+      background-color: yellow;
+      /* 若一個字中間沒有空格電腦會視為一個單字而不換行，若單字太長可能會造成字超出範圍區域 */
+      /* break-word 過長單字會自動換到下一行 */
+      word-wrap: break-word;
+    }
+
+    .word-break {
+      width: 400px;
+      background: #aaa;
+      /* 
+        break-all 允許在單字的字母換行，不一定要完整的單字
+        keep-all 只能在半形空格或連字符號-處換行 
+      */
+      word-break: break-all
+    }
+
+    /* 
+      pre(像 pre 標籤，保留空白顯示於畫面)
+      pre-wrap(像 pre 標籤，保留空白顯示於畫面，但會換行)
+      nowrap(內容強制不換行)
+    */
+    .white-space {
+      width: 400px;
+      background: yellow;
+      white-space: nowrap;
+    }
+
+    /* 設定連結狀態，狀態須按順序，LoVe HAte 大寫 Link Visited Hover Active */
+    /* 若四個都要寫要照順序寫 */
+
+    /* 連結初始顏色 */
+    a:link {
+      color: rgb(161, 66, 87);
+      text-decoration: none;
+    }
+
+    /* 點擊過後的顏色 */
+    a:visited {
+      color: #ccc;
+    }
+
+    /* 滑鼠移入的顏色 */
+    a:hover {
+      color: green;
+      text-decoration: underline;
+    }
+
+    /* 點擊時的顏色 */
+    a:active {
+      color: aqua;
+    }
+
+    .google-font {
+      font-family: 'Boogaloo', cursive;
+      font-family: 'Stick', sans-serif;
+      font-size: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>設定 font</h1>
+  <p class="font-style">Lorem ipsum dolor sit amet.</p>
+
+  <hr>
+
+  <h1>設定 text</h1>
+  <p class="text-style">Lorem ipsum dolor sit amet.</p>
+
+  <hr>
+
+  <h1>多重文字陰影</h1>
+  <p class="multi-text-shadow">Lorem ipsum dolor sit amet.</p>
+
+  <hr>
+
+  <h3>word-wrap</h3>
+  <p class="word-wrap">
+    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  </p>
+
+  <hr>
+
+  <h3>word-break</h3>
+  <p class="word-breal">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, a expedita, praesentium voluptas id aspernatur
+    et laboriosam magni ipsa omnis natus, alias explicabo quidem reiciendis saepe veritatis ex hic velit!
+  </p>
+
+  <hr>
+
+  <h3>white-space</h3>
+  <p class="white-space">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eius tenetur rerum facilis
+    asperiores delectus laudantium excepturi illum. Dignissimos, iure! Ad dolor nesciunt ipsa officia sequi ut quam
+    perspiciatis laboriosam.</p>
+
+  <hr>
+
+  <h1>連結顏色變化</h1>
+  <a href="#">Google</a>
+
+  <hr>
+
+  <h1>Goole Fonts</h1>
+  <p class="google-font">Lorem ipsum dolor sit amet.</p>
+
+  <hr>
+
+  <h1>rem 與 em 的差異</h1>
+  <h2>rem 為 root(html) 預設 fon-size 的倍數，預設為16px</h2>
+
+  <!-- devTools -->
+  <!-- rem = root em -->
+  <!-- 16px -->
+  <div style="font-size:1rem">
+    font
+    <!-- 32px -->
+    <div style="font-size:2rem">
+      font
+      <!-- 48px -->
+      <div style="font-size:3rem">
+        font
+      </div>
+    </div>
+  </div>
+
+  <h2>em 為父層 font-size 的倍數，父層若沒有設定文字尺寸會往外尋找，都沒有會以 root (html) 預設的 font-size 為依據</h2>
+  <!-- 16px -->
+  <div style="font-size:1em">
+    font
+    <!-- 32px -->
+    <div style="font-size:2em">
+      font
+      <!-- 96px -->
+      <div style="font-size:3em">
+        font
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 
+      類別選擇器 class: .名稱 {}
+      - 類別名稱前必定以 . 句點開頭 
+      - 名稱必須以字元開始，但不能以數字或中文開頭
+      - 可以使用連字，符號和底線 _ 串接名稱
+      - 類別名稱有大小寫區分
+      - class 是 css 裡最常被使用的選擇器，具有可重複使用的特性
+    */
+
+    .a {
+      color: blue;
+    }
+
+    li {
+      color: rgb(49, 148, 24);
+    }
+
+    .b {
+      color: darkmagenta;
+    }
+
+    .c {
+      font-size: 30px;
+    }
+
+    /* id 是用 #id{} */
+    #header {
+      color: red;
+    }
+
+    #main {
+      color: blue;
+    }
+
+    #sidebar {
+      color: green;
+    }
+
+    /* 子代選擇器 nav > p，只選擇到兒子一層 */
+    /* 選擇到 nav 下一層的 p */
+    nav>p {
+      color: red;
+    }
+
+    /* 後代選擇器 nav 空格 p，選擇到兒子與孫子們 */
+    /* 選擇到 nav 裡面所有的 p */
+    nav p {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="a">Class 選擇器</h1>
+  <p class="a">Lorem ipsum dolor sit amet.</p>
+
+  <h1>相同元素，不同外觀</h1>
+  <ul>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li class="b">Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+  </ul>
+
+  <h1>Class 可重複使用</h1>
+  <p>Lorem ipsum dolor sit amet. <em class="c">Lorem ipsum dolor sit amet. <span class="a">Lorem ipsum dolor sit
+        amet.</span></em></p>
+  <hr>
+  <!-- 
+    #id名稱，可以自動打好，例如#header => <div id="header"></div>
+    一份文件中只允許一個獨一無二的id，不能重複，同一個id只能有一個 
+  -->
+  <h1>ID 選擇器</h1>
+  <p>可以當作網頁邏輯區塊，例如家中的格局:客廳、廚房、臥室...等</p>
+  <div id="header">header</div>
+  <div id="main">main</div>
+  <div id="sidebar">siderbar</div>
+  <div id="footer">footer</div>
+
+  <h1>被JavaScript 或 jQuery 拿來當選擇器用</h1>
+  <div id="container">Lorem ipsum dolor sit amet.</div>
+  <button id="btn">按我</button>
+
+  <hr>
+
+  <h1>後代選擇器與子代選擇器</h1>
+  <nav>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+  </nav>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js' integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==' crossorigin='anonymous'></script>
+
+  <!-- 安裝 cdnjs 套件 → 按F1搜尋 cdnjs → SEARCH FOR LIBRARIES → jQuery → 在看看要哪個版本 -->
+  <script>
+    $('#btn').click(function () {
+      $('#container').slideToggle()
+    })
+  </script>
+
+</body>
+
+</html>
